@@ -1,0 +1,101 @@
+package com.amit.basicoops;
+
+import java.util.Scanner;
+
+class Student
+{
+	int stud_id,age;
+	String stud_name,gender,address,contact_number,aadhar_number;
+	static String stud_college_name="RVS COLLEGE OF ENGINEERING",stud_college_address="JAMSHEDPUR,JHARKHAND"; 
+	public void initializeStudentDetails(int stud_id,int age,String stud_name,String gender,String address,String contact_number,String aadhar_number)
+	{
+		this.stud_id=stud_id;
+		this.age=age;
+		this.stud_name=stud_name;
+		this.gender=gender;
+		this.address=address;
+		this.contact_number=contact_number;
+		this.aadhar_number=aadhar_number;
+		
+	}
+	public void displayStudentDetails()
+	{   
+		System.out.println("Student Id : "+this.stud_id);
+		System.out.println("Name : "+this.stud_name);
+		System.out.println("Age : "+this.age);
+		System.out.println("Gender : "+this.gender);
+		System.out.println("Address : "+this.address);
+		System.out.println("Contact Number : "+this.contact_number);
+		System.out.println("Aadhar Number : "+this.aadhar_number);
+		System.out.println("College Name : "+this.stud_college_name);
+		System.out.println("College Address : "+this.stud_college_address);
+		System.out.println("**********************************************************");
+		
+	}
+	public void searchStudentById(int stud_id)
+	{
+		if(this.stud_id==stud_id)
+		{
+			System.out.println("Student Id : "+this.stud_id);
+			System.out.println("Name : "+this.stud_name);
+			System.out.println("Age : "+this.age);
+			System.out.println("Gender : "+this.gender);
+			System.out.println("Address : "+this.address);
+			System.out.println("Contact Number : "+this.contact_number);
+			System.out.println("Aadhar Number : "+this.aadhar_number);
+			System.out.println("College Name : "+this.stud_college_name);
+			System.out.println("College Address : "+this.stud_college_address);
+			System.out.println("**********************************************************");
+			
+		}
+		else System.out.println("Not Available");
+	}
+	
+}
+public class StudentInfo 
+{
+
+	public static void main(String[] args) 
+	{
+		Student s1=new Student();
+		Student s2=new Student();
+		Student s3=new Student();
+		Scanner sc = new Scanner(System.in);
+	        System.out.println("***Input the asked details***");
+	        System.out.println("Enter Student Id :");
+	        int stud_id = sc.nextInt(); 
+	        
+	        System.out.println("Enter Age :");
+	        int age = sc.nextInt();
+	        
+	        System.out.println("Enter Gender :");
+	        String gender = sc.next();
+	        
+	        System.out.println("Enter Name Of The Student :");
+	        String stud_name = sc.next();
+	    
+	        System.out.println("Enter Address :");
+	        String address = sc.next();
+	        
+	        System.out.println("Enter Contact Number :");
+	        String contact_number=sc.next();
+	        
+	        System.out.println("Enter Aaadhar Number :");
+	        String aadhar_number=sc.next();
+		/*s1.initializeStudentDetails(1, 20, "Amit Kumar", "Male", "Katghara,Nawadih,Bokaro,Jharkhand-829144", "+91 9973568704", "6352 9336 3163");
+		s2.initializeStudentDetails(2, 23, "Rahul Kumar", "Male", "Phusro,Bokaro,Jharkhand-829144", "+91 9065707076", "6200 9340 5663");
+		s3.initializeStudentDetails(3, 22, "Anmol Kumar", "Male", "Dhurwa,Ranchi,Jharkhand-834003", "+91 8540858396", "7256 7654 1238");*/
+		
+	    s1.initializeStudentDetails(stud_id, age, stud_name, gender, address, contact_number, aadhar_number);
+	    s1.displayStudentDetails();
+		//s2.displayStudentDetails();
+		//s3.displayStudentDetails();
+		
+		s1.searchStudentById(1);
+		
+		
+		
+
+	}
+
+}

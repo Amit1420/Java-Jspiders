@@ -1,0 +1,37 @@
+package com.amit.basicoops;
+
+class Student
+{
+	int stud_id,age;
+	String stud_name,gender,address,contact_number,aadhar_number;
+	static String stud_college_name="RVS COLLEGE OF ENGINEERING",stud_college_address="JAMSHEDPUR,JHARKHAND"; 
+	public void initializeStudentDetails(int stud_id,int age,String stud_name,String gender,String address,String contact_number,String aadhar_number,String stud_college_name,String stud_college_address)
+	{
+		this.stud_id=stud_id;
+		this.age=age;
+		this.stud_name=stud_name;
+		this.gender=gender;
+		this.address=address;
+		this.contact_number=contact_number;
+		this.aadhar_number=aadhar_number;
+		
+	}
+	public void displayStudentDetails()
+	{
+		
+	}
+	
+}
+public class StudentInfo 
+{
+
+	public static void main(String[] args) 
+	{
+		Student s1=new Student();
+		
+		
+		
+
+	}
+
+}

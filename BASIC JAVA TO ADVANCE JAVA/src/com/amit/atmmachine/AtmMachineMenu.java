@@ -48,7 +48,8 @@ System.out.println("*******ATM MACHINE*******");
 				{
 					if(withdrawAmount<balance)
 					{
-						System.out.println("Available Balance :"+Utility.amountWithdraw(balance, withdrawAmount));
+						Utility.atmBalanceInfo(balance, withdrawAmount);
+						//System.out.println("Available Balance :"+Utility.amountWithdraw(balance, withdrawAmount));
 						
 					}
 					else

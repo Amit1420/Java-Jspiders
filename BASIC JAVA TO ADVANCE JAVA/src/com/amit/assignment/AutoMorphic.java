@@ -9,10 +9,10 @@ public class AutoMorphic {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter A Number :");
 		int num=s.nextInt();
-		int n=num;
+		int temp=num;
 		int res=num*num;
 		int rem=res%pow(length(num));
-		if(rem==n) 
+		if(rem==temp) 
 		{
 			System.out.println("Number is AutoMorphic");
 		}
@@ -41,7 +41,6 @@ public class AutoMorphic {
 			result=result*10;
 			len--;
 		}
-		//System.out.println("Res :"+result);
 		return result;
 		
 	}

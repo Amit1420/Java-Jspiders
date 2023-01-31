@@ -7,14 +7,14 @@ class Addition
 	public void m1()
 	{
 		System.out.println("Sum = "+this.sum);
-		System.out.println("*********************************");
+		System.out.println("*****************************");
 	}
 	public void m1(int a)
 	{
 		this.a=a;
 		this.sum=this.a;
 		System.out.println("Sum = "+this.sum);
-		System.out.println("*********************************");
+		System.out.println("****************************");
 	}
 	public void m1(int a,int b)
 	{ 

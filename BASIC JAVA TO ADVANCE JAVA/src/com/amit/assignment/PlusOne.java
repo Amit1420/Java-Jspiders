@@ -6,9 +6,10 @@ public class PlusOne {
 	public static int[] plusOne(int[] digits) 
 	{
         int sum=0;
-        if (digits[0]==9 && digits[digits.length-1]==9)
+        int l=digits.length;
+        if (digits[0]==9 && digits[l-1]==9)
         {
-            for (int i = digits.length-1; i >=0; i--) 
+            for (int i = l-1; i >=0; i--) 
             {
                 if (digits[i]==9){
                     sum++;
@@ -19,7 +20,7 @@ public class PlusOne {
         
         if (sum==digits.length)
         {
-           int[] res=new int[digits.length+1];
+           int[] res=new int[l+1];
            res[0]=1;
             for (int i = 1; i < res.length; i++) 
             {
@@ -28,11 +29,13 @@ public class PlusOne {
             return res;
         }
 
-        for (int i = digits.length - 1; i >= 0; i--) 
+        for (int i = l - 1; i >= 0; i--) 
         {
-            if (digits[i]==9){
+            if (digits[i]==9)
+            {
                 digits[i]=0;
-            }else {
+            }else 
+            {
                 digits[i]++;
                 return digits;
             }

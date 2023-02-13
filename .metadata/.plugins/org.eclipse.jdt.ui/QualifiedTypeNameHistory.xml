@@ -9,5 +9,11 @@
     <fullyQualifiedTypeName name="javax.swing.JTable"/>
     <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
     <fullyQualifiedTypeName name="com.amit.copyconstructor.Student"/>
+    <fullyQualifiedTypeName name="com.amit.studentdetails.Courses"/>
+    <fullyQualifiedTypeName name="com.amit.collegedetails.College"/>
+    <fullyQualifiedTypeName name="com.amit.courses.Courses"/>
+    <fullyQualifiedTypeName name="com.amit.studentdetails.Student"/>
+    <fullyQualifiedTypeName name="com.amit.exercisedevelopers.Ebook"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -5,18 +5,26 @@
 		<item key="DIALOG_Y_ORIGIN" value="392"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="s[i]"/>
+		<item key="selection" value="void"/>
 		<item key="wrap" value="false"/>
 		<item key="casesensitive" value="true"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="int "/>
+			<item value="occupation"/>
+			<item value="s."/>
+			<item value="s"/>
 			<item value="s1"/>
 			<item value="keyboard"/>
 			<item value="sum"/>
 		</list>
 		<list key="replacehistory">
+			<item value="void"/>
+			<item value="specialist"/>
+			<item value="stud."/>
+			<item value="stud"/>
 			<item value="s[i]"/>
 			<item value="s"/>
 			<item value="this.sum"/>

@@ -1,6 +1,6 @@
 package com.amit.bankloan;
 
-public class ICICI 
+public class Icici extends Bank
 {
 	public double rateOfInterest()
 	{

@@ -35,7 +35,7 @@ Downcasting :
 * Downcasting cannot be achieved without upcasting.
 * In downcasting we can access :
 	->specific methods of Sub class
-	->all the properties 
+	->all the properties of sub class and super class
 *Downcasting not achieve Data Abstraction.
  */
 class Animal

@@ -1,9 +1,10 @@
 package com.amit.bankloan;
 
-public class SBI extends Bank
+public class Hdfc extends Bank
 {
 	public double rateOfInterest()
 	{
-		return 0.07	;
+		return 0.15;
 	}
+
 }

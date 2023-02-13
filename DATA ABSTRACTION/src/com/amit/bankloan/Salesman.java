@@ -2,7 +2,7 @@ package com.amit.bankloan;
 
 public class Salesman
 {
-     public void salesForLoan(Bank bank,Double loanAmount)
+     public void salesForLoan(Bank bank,double loanAmount)
      { 
     	 double roi=bank.rateOfInterest();
     	 double roiInDouble=roi*100;

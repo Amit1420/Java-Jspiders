@@ -1,5 +1,7 @@
 package com.amit.atmmachinedevelopment;
 
+import java.util.Scanner;
+
 public class TestAtmMachineServices 
 {
 
@@ -7,20 +9,33 @@ public class TestAtmMachineServices
 	{
 		Customer customer = new Customer();
 		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("**************************************************** \n"+
+                "************ Welcome to my Software...! ************ \n"				
+	+            "**************************************************** \n");
+		System.out.println("Select which Bank Atm you want to use ");
+		System.out.println("1. AXIS  \n"
+				+ "2. HDFC  \n"+"3. SBI  \n"+"4. PNB  ");
+				
+	System.out.println("Enter your Choice: ");
+	int choice=sc.nextInt();
+	if(choice==1)
+	{
+		customer.servicesUsed(new Axis());
+	}
+	else if(choice==2)
+	{
+		customer.servicesUsed(new Hdfc());
+	}
+	else if(choice==3)
+	{
 		customer.servicesUsed(new Sbi());
-//		System.out.println("***************************************");
-//		
-//		customer.servicesUsed(new Axis());
-//		System.out.println("***************************************");
-//		
-//		customer.servicesUsed(new Hdfc());
-//		System.out.println("***************************************");
-//		
-//		customer.servicesUsed(new Pnb());
+	}
+	else 
+	{
+		customer.servicesUsed(new Pnb());
 		
-		
-		
-		
+	}
 		
 	}
 

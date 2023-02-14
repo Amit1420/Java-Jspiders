@@ -10,9 +10,6 @@ public class Customer
 		int password=1420;
 		Scanner s = new Scanner(System.in);
 		
-		System.out.println("**************************************************** \n"+
-                "************ Welcome to my Software...! ************ \n"				
-	+            "**************************************************** \n");
 System.out.println("*******ATM MACHINE OF "+bank.getClass().getSimpleName()+"*******");
 		
 		for(;;)

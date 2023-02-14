@@ -21,6 +21,7 @@ package com.amit.castingpack;
 *Upcasting achieves Data Abstraction.
 
 Downcasting : 
+
 *Converting super class type to sub class type is known as downcasting.
 *Creating the reference of sub class and pointing it to upcasting reference of super class is known as downcasting.
 * It is also known as Specialization or object level narrowing.

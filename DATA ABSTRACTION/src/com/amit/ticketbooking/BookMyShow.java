@@ -1,5 +1,6 @@
 package com.amit.ticketbooking;
 
+
 public class BookMyShow 
 {
 
@@ -9,14 +10,14 @@ public class BookMyShow
                 "************ Welcome to BookMyShow...! ************ \n"				
 	+            "**************************************************** \n");
 		System.out.println();
-		BookingApp customer1=BookingApp.getInstance();
+		BookingApp customer1= new BookingApp();
 		customer1.bookTickets();
 		
-//		BookingApp customer2=BookingApp.getInstance();
-//		customer2.bookTickets();
-//		
-//		BookingApp customer3=BookingApp.getInstance();
-//		customer3.bookTickets();
+		BookingApp customer2=new BookingApp();
+		customer2.bookTickets();
+		
+		BookingApp customer3=new BookingApp();
+		customer3.bookTickets();
 		
 			
 	}

@@ -15,5 +15,7 @@
     <fullyQualifiedTypeName name="com.amit.studentdetails.Student"/>
     <fullyQualifiedTypeName name="com.amit.exercisedevelopers.Ebook"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.amit.ticketbooking.Theatre"/>
+    <fullyQualifiedTypeName name="com.amit.ticketbooking.BookingApp"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

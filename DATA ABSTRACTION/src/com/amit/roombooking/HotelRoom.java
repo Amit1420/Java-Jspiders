@@ -1,5 +1,7 @@
 package com.amit.roombooking;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 class HotelRoom 
@@ -20,6 +22,8 @@ class HotelRoom
   Scanner sc=new Scanner(System.in);
   public void reserveRoom(int numberOfRoom)
   {   
+	  System.out.println("Enter Your Booking Date : "+"Format should be dd-MM-yyyy only");
+      String bdate=sc.next();
 	  System.out.println("Select The ROOM TYPE : \n"+"1.AC ROOM \n"+"2.NON AC ROOM ");
 	
 	  int choice=sc.nextInt();
@@ -34,6 +38,13 @@ class HotelRoom
 		  {
 			  acRoom=acRoom-numberOfRoom;
 			  System.out.println(numberOfRoom+" Rooms Are Booked");
+			  LocalDateTime myDateObj = LocalDateTime.now();
+//			   System.out.println("Before formatting: " + myDateObj);
+			    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+			    String formattedDate = myDateObj.format(myFormatObj);
+//			    System.out.println("After formatting: " + formattedDate);
+			    System.out.println("Booking Date And Time : "+formattedDate);
+			  System.out.println("You have to check-in the room at 12:00 P.M.on "+bdate);
 			  System.out.println("Thanks For Your Booking!!!!!!!!!!!!");
 		  }
 	  }
@@ -47,6 +58,13 @@ class HotelRoom
 		  {
 			  nonAcRoom=nonAcRoom-numberOfRoom;
 			  System.out.println(numberOfRoom+" Rooms Are Booked");
+			  LocalDateTime myDateObj = LocalDateTime.now();
+//			   System.out.println("Before formatting: " + myDateObj);
+			    DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+			    String formattedDate = myDateObj.format(myFormatObj);
+//			    System.out.println("After formatting: " + formattedDate);
+			    System.out.println("Booking Date And Time : "+formattedDate);
+			  System.out.println("You have to check-in the room at 12:00 P.M.on "+bdate);
 			  System.out.println("Thanks For Your Booking!!!!!!!!!!!!");
 		  }
 		  

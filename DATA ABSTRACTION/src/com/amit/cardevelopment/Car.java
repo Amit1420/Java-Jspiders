@@ -1,18 +1,9 @@
 package com.amit.cardevelopment;
 
-public class Car 
+abstract class Car 
 { 
-	public void start()
-	{
-		
-	}
-	public void accelerate()
-	{
-		
-	}
-	public void stop()
-	{
-		
-	}
+	abstract public void start();
+	abstract public void accelerate();
+	abstract public void stop();
 
 }

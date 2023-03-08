@@ -1,22 +1,14 @@
 package com.amit.atmmachinedevelopment;
 
-public class Bank 
+abstract public class Bank 
 {
-	public  void amountWithdraw(int balance,int withdrawAmount)
-	{
-	 
-	}
-	public  void depositAmount(int balance,int amountDeposit)
-	{
-		
-	}
-	public void balanceEnquiry(int balance)
-	{
-		
-	}
-	public  void atmBalanceInfo(int balance,int withdrawAmount)
-	{
-	   
-	}
+	abstract public  void amountWithdraw(int balance,int withdrawAmount);
+	
+	abstract public  void depositAmount(int balance,int amountDeposit);
+	
+	abstract public void balanceEnquiry(int balance);
+	
+	abstract public  void atmBalanceInfo(int balance,int withdrawAmount);
+	
 
 }

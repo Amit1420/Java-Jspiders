@@ -39,20 +39,16 @@ Downcasting :
 	->all the properties of sub class and super class
 *Downcasting not achieve Data Abstraction.
  */
-class Animal
+abstract class Animal
 {
 	public void drinkWater() //generic method
 	{
 		System.out.println("Every Animal requires water to survive");
 	}
-	public void sound() // overridden method
-	{
-		
-	}
-	public void movement() // overridden method
-	{
-		
-	}
+	abstract public void sound(); // overridden method
+	
+	abstract public void movement(); // overridden method
+	
 }
 class Lion extends Animal
 {

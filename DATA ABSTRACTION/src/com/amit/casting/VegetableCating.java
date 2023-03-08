@@ -2,15 +2,17 @@ package com.amit.casting;
 
 import java.util.Scanner;
 
-class Vegetable
+abstract class Vegetable
 {
+	abstract public void washingVegetables();
+	
+}
+class Carrot extends Vegetable
+{   @Override
 	public void washingVegetables()
 	{
 		System.out.println("Luke warm water with salt soaked can wash the vegetables");
 	}
-}
-class Carrot extends Vegetable
-{
 	public void prepareHalwa()
 	{
 		System.out.println("Carrot Halwa is a traditional indian dessert");
@@ -18,6 +20,11 @@ class Carrot extends Vegetable
 }
 class Potato extends Vegetable
 {
+	@Override
+	public void washingVegetables()
+	{
+		System.out.println("Luke warm water with salt soaked can wash the vegetables");
+	}
 	public void prepareFrenchFries()
 	{
 		System.out.println("Fries with more oil is good for health");

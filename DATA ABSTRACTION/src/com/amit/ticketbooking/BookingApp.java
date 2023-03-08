@@ -8,6 +8,10 @@ class BookingApp {
 	{
 		Scanner sc = new Scanner(System.in);
 		int choice = 0;
+		System.out.println("PATHAN IS AVAILABLE IN THEATRE1");
+		System.out.println("FREDDY IS AVAILABLE IN THEATRE2");
+		System.out.println("AVATAR :THE WAY OF WATER IS AVAILABLE IN THEATRE3");
+		System.out.println();
 		for (;;) {
 			System.out.println("Select the Movie :");
 			System.out.println("1. PATHAAN \n" + "2. FREDDY  \n" + "3. AVATAR : THE WAY OF WATER ");

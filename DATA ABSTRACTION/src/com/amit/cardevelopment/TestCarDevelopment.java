@@ -7,7 +7,6 @@ public class TestCarDevelopment
 	{
 		
 		Driver driver1=new Driver();
-		
 		driver1.drive(new Swift());
 		driver1.accessBluetooth(new Swift());
 		System.out.println("********************************");

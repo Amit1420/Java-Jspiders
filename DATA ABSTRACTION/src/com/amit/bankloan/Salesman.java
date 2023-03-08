@@ -9,13 +9,13 @@ public class Salesman
     	 int roiInInt=(int) roiInDouble; 
     	 System.out.println(roiInInt+"% is the rate of interest "+" charged by "+bank.getClass().getSimpleName()+" bank");
     	 
-    	 double interestCharged=loanAmount*roiInInt;
+    	 double interestCharged=(loanAmount*roiInInt)/100;
     	 System.out.println(interestCharged+" is the rate of interest charged"+
     	 " for the amount "+loanAmount+" by "+bank.getClass().getSimpleName()+" bank");
     	 
     	 double totalAmount=loanAmount+interestCharged;
     	 System.out.println(totalAmount+" is the total amount to be paid for "+
-    	 bank.getClass().getSimpleName()+"for the amount "+loanAmount);
+    	 bank.getClass().getSimpleName()+" for the amount "+loanAmount);
     	 
      }
      

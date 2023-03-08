@@ -1,4 +1,4 @@
-package com.amit.stringmethods;
+package com.amit.stringprogramspack;
 
 public class Demo2 
 {

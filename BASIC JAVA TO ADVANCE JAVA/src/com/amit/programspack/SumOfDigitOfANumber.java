@@ -29,9 +29,10 @@ public class SumOfDigitOfANumber {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter A Number :");
 		int num=s.nextInt();
-		int revNum=reverse(num);
 		System.out.println("Enter A Key :");
 		int key=s.nextInt();
+		int revNum=reverse(num);
+		System.out.println("Reverse Number :"+revNum);
 		while(revNum>0)
 		{
 		if(length(revNum)!=key)
@@ -48,7 +49,7 @@ public class SumOfDigitOfANumber {
 				sum+=rem;
 				revNum/=10;
 			}
-			System.out.println("Sum : "+sum);
+			System.out.println("Sum of first "+key+" digits : "+sum);
 		}
 		}
 		

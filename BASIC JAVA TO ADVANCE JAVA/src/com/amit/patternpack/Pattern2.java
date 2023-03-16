@@ -1,15 +1,15 @@
 package com.amit.patternpack;
 
-public class Pattern2 
-{
+public class Pattern2 {
 
-	public static void main(String[] args) 
-	{
-		for(int i=5;i>=0;i--)
+	public static void main(String[] args) {
+		int n=7;
+		for(int i=1;i<=n;i++)
 		{
-			for(int j=0;j<=i;j++)
+			for(int j=1;j<=n;j++)
 			{
-				System.out.print("*"+" ");
+				if(i==1||i==n||j==1||j==n) System.out.print("* ");
+				else System.out.print("  ");
 			}
 			System.out.println();
 		}

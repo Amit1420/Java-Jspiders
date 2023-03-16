@@ -21,6 +21,7 @@ public class BinarySearch {
 		{
 			System.out.print(n+" ");
 		}
+		System.out.println();
 		System.out.println("Enter the element which is to be searched :");
 		int ele=sc.nextInt();
 		int index=search(a,ele);

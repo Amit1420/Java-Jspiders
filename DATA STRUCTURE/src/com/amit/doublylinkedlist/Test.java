@@ -9,7 +9,7 @@ public class Test {
 		d.add(30);
 		d.add(40);
 		d.add(50);
-		d.reverse();
+		d.remove(4);
 		for(int i=0; i<d.size(); i++) {
 			System.out.println(d.get(i));
 		}

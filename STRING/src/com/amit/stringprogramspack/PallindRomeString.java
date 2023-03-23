@@ -11,7 +11,7 @@ public class PallindRomeString
 	static boolean isPallindRome(String s)
 	{
 		char[] a=s.toLowerCase().toCharArray();
-		int i=0;int j=a.length-1;
+		int i=0,j=a.length-1;
 		while(i<j)
 		{
 			if(a[i]!=a[j]) return false;

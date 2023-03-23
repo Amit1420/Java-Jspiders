@@ -59,25 +59,32 @@ public class DoublyLinkedList {
 	  }
 	  return curr.ele;
   }
-  
-  public void remove(int index)
-  {
-	  if(index==0)
-	  {
-		  first=first.next;
-		  count--;
-		  return;
-	  }
-	  Node curr=first;
-	  for(int i=1;i<index;i++)
-	  {
-		  curr=curr.next;
-	  }
-	  curr.next=curr.next.next;
-	  curr.next.prev=curr;
-	  
-	  count--;
-  } 
+  public void remove(int index) {
+		if(index <= -1 || index >= size()) throw new IndexOutOfBoundsException();
+		if(index == 0) {
+			first = first.next;
+			count--; 
+			return;
+		}
+		if(index == size()-1) {
+			Node curr = first;
+			for(int i=1; i<index; i++) {
+				curr = curr.next;
+			}
+			curr.next = null;
+			count--;
+			return;
+		}
+		
+		Node curr = first;
+		for(int i=1; i<index; i++) {
+			curr = curr.next;
+		}
+		curr.next = curr.next.next;
+		curr.next.prev = curr;
+		count--;
+	}
+
   public void reverse()
 	{
 	  Node temp = null;

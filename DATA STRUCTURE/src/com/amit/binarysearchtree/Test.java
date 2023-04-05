@@ -2,7 +2,7 @@ package com.amit.binarysearchtree;
 
 import java.util.Comparator;
 
-class Len implements Comparator<Object> {
+class Len implements Comparator {
 	@Override
 	public int compare(Object o1, Object o2) {
 		return ((String) o1).length() - ((String) o2).length();
@@ -12,7 +12,7 @@ class Len implements Comparator<Object> {
 public class Test {
 
 	public static void main(String[] args) {
-		BinarySearchTree s = new BinarySearchTree();
+		BinarySearchTree s = new BinarySearchTree(new Len());
 //		s.add(50);
 //		s.add(75);
 //		s.add(20);

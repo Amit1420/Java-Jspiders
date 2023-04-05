@@ -47,5 +47,15 @@ public class BinarySearch {
 		}
 		return -1;
 	}
-
+                     //     using recursion
+//	public static int binarySearch(int[] a, int ele, int start, int end) {
+//		if(start > end) return -1;
+//		int mid = (start + end)/2;
+//		if(ele == a[mid]) return mid;
+//		else if(ele < a[mid]) return binarySearch(a, ele, start, mid-1);
+//		else return binarySearch(a, ele, mid+1, end);
+//		
+//	}
 }
+	
+

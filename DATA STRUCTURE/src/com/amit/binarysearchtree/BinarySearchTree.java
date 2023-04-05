@@ -9,13 +9,13 @@ public class BinarySearchTree {
 	private Node root = null;
 	private int count = 0;
 	private boolean flag = false;
-	private Comparator<Object> c = null;
+	private Comparator c = null;
 
 	public BinarySearchTree() {
 
 	}
 
-	public BinarySearchTree(Comparator<Object> c) {
+	public BinarySearchTree(Comparator c) {
 		this.c = c;
 	}
 
@@ -42,12 +42,11 @@ public class BinarySearchTree {
 		return n;
 	}
 
-	@SuppressWarnings("unchecked")
 	private int compare(Object o1, Object o2) {
 		if (c != null) {
 			return c.compare(o1, o2);
 		}
-		return ((Comparable<Object>)o1).compareTo(o2);
+		return ((Comparable)o1).compareTo(o2);
 	}
 
 	public void levelOrder() {

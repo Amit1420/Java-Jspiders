@@ -25,24 +25,23 @@ public class Demo1 {
 		l1.add(40);
 //		l1.add(2,60);
 //		l1.remove(0);
-//		l1.reverse();
-		int[] a=new int[l1.size()];
+		l1.reverse();
 		
 		
 		for(int i=0; i<l1.size(); i++) {
-			a[i]=(int) l1.get(i);
+			l1.get(i);
 		}
-		System.out.println("Before Sorting : ");
-		for(int n:a)
-		{
-			System.out.println(n);
-		}
-		sort(a);
-		System.out.println("After Sorting : ");
-		for(int n:a)
-		{
-			System.out.println(n);
-		}
+//		System.out.println("Before Sorting : ");
+//		for(int n:a)
+//		{
+//			System.out.println(n);
+//		}
+//		sort(a);
+//		System.out.println("After Sorting : ");
+//		for(int n:a)
+//		{
+//			System.out.println(n);
+//		}
 		
 	}
 

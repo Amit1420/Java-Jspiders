@@ -1,5 +1,7 @@
 package com.amit.lambda;
 
+import java.util.Objects;
+
 public class Customer {
 private int id;
 private String name;
@@ -40,5 +42,19 @@ public void setType(String type) {
 public String toString() {
 	return "Customer [id=" + id + ", name=" + name + ", product=" + product + ", type=" + type + "]";
 }
+@Override
+	public int hashCode() {
+		
+		return Objects.hash(id,name,product,type);
+	}
+@Override
+	public boolean equals(Object obj) {
+	    if(this==obj) return true;
+	    if(obj==null) return true;
+	    if(getClass()!=obj.getClass()) return false;
+	    Customer other = (Customer) obj;
+	    return id == other.id && Objects.equals(name, other.name) && Objects.equals(type, other.type);
+	    		
+	}
 
 }

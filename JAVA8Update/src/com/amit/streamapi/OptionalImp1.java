@@ -21,6 +21,9 @@ public class OptionalImp1 {
 //	}
 //	
 //	};
+//		Optional<Object> empty=Optional.empty();
+//		or
+//		Optional<Integer> empty2=Optional.empty();
 		Supplier<Optional<Customer>> sup=()->Optional.empty();
 		
 		Optional<Customer> optional=l.stream().distinct().filter(e->e.getId()==id).findFirst().or(sup);

@@ -22,7 +22,7 @@ class HotelRoom
   Scanner sc=new Scanner(System.in);
   public void reserveRoom(int numberOfRoom)
   {   
-	  System.out.println("Enter Your Booking Date : "+"Format should be dd-MM-yyyy only");
+	  System.out.println("Enter Your Check-in Date : "+"Format should be dd-MM-yyyy only");
       String bdate=sc.next();
 	  System.out.println("Select The ROOM TYPE : \n"+"1.AC ROOM \n"+"2.NON AC ROOM ");
 	

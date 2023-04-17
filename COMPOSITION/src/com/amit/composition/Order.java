@@ -48,7 +48,7 @@ public class Order {
 			LineItem c=lineItems.get(i);
 			if(c.getId()==itemId)
 			{
-				this.lineItems.remove(c);
+				lineItems.remove(c);
 			}
 		}
 		
